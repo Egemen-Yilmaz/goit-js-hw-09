@@ -1,0 +1,79 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Form Kapsayıcısı */
+.feedback-form {
+    background-color: #ffffff;
+    padding: 24px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Etiketler ve Alanlar */
+label {
+    display: block;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Input ve Textarea Alanları (Normal Durum) */
+input[type="email"],
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 4px;
+    border: 1px solid #808080; /* Normal */
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+    height: 80px;
+}
+
+/* Hover Durumu (Taslaktaki Hafif Koyu Çerçeve) */
+input[type="email"]:hover,
+textarea:hover {
+    border-color: #000000; 
+}
+
+/* Active/Focus Durumu (Taslaktaki Mavi Çerçeve) */
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #4e75ff;
+    box-shadow: 0 0 0 3px rgba(78, 117, 255, 0.25);
+}
+
+/* Submit Butonu */
+button[type="submit"] {
+    display: block;
+    height: 40px;
+    width: 96px;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #4E75FF; /* Normal */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Submit Butonu Hover Durumu */
+button[type="submit"]:hover {
+    background-color: #6C8CFF; /* Hover */
+}
